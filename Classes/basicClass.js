@@ -18,8 +18,8 @@ class Rectangle {
 
 }
 
-let myRectangle1 = new Rectangle(3, 3, "blue");
-let myRectangle2 = new Rectangle(9, 2, "red");
+let myRectangle1 = new Rectangle(3, 3, "blue"); 
+let myRectangle2 = new Rectangle(9, 2, "red"); 
 
 myRectangle2.printDescription();
 console.log(myRectangle1.getArea());
