@@ -45,3 +45,30 @@ function developSoftware (getProgrammers){
 }
 
 developSoftware(programmers);
+
+/* New Examples for child class */
+
+class Person {
+    constructor(name, surname, age){
+        this.name = name;
+        this.surname = surname;
+        this.age = age;
+    }
+    fullName() {
+        return this.name + " - " + this.surname;
+    }
+}
+
+class Engineer extends Person { }; // Engineer --> Subclass (Child) Person --> Superclass (Parent)
+
+const person1 = new Person("Can", "Alp", 24);
+
+const person2 = new Engineer("Onur", "Alp", 22);
+
+console.log(person1);
+console.log(person2);
+
+console.log(person1 instanceof Person);
+console.log(person2 instanceof Person);
+
+console.log(person1 instanceof Engineer);
